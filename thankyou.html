@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+    Name: Dre Woolston
+    Date: 9/14/21
+    Assignment: Fit for Fun Fitness Club
+  -->
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+          document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="static/styles.css" />
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class=a>Home</a>
+    <a href="classes.html" class=a>Classes</a>
+    <a href="info.html" class=a>Information</a>
+  </nav>
+  <div class="container">
+
+    <h2>Thank you for requesting an appt! We will be in touch soon!</h2>
+
+    <script>
+      printQuery();
+    </script>
+  </div>
+</body>
+
+</html>
